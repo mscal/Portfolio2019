@@ -1,0 +1,15 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "description": "MyPort",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Scalia",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.0.1",
+    "aos": "^2.3.4"
+  }
+}
