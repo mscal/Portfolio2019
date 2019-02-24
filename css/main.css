@@ -65,6 +65,7 @@ body {
 
 .mainpage li {
   list-style-type: none;
+  padding: 0.1em;
 }
 
 .mainpage li:hover {
@@ -235,6 +236,12 @@ _:-ms-lang(x), .remove-from-ie {
 
 .container a {
   margin-bottom: -1%;
+}
+
+.spike-bottom {
+  width: inherit;
+  height: 100%;
+  max-height: 172px;
 }
 
 footer {
@@ -450,6 +457,109 @@ _:-ms-lang(x), .logohead {
   }
   100% {
     background-position: -389520px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    display: none;
+  }
+  .spike-bottom {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+    margin: auto;
+  }
+  .logohead {
+    background-color: #1A1A1A;
+  }
+  button {
+    width: 40%;
+  }
+  input {
+    width: 40%;
+  }
+  body {
+    background-image: none;
+  }
+  .education,
+  .work,
+  .past-projects,
+  .personal-work {
+    margin-left: -1em;
+  }
+  .mainpage li {
+    padding: 0.5em;
+  }
+  .gallery {
+    margin-left: 2em;
+  }
+}
+
+@media (min-width: 310px) and (max-width: 767px) {
+  nav {
+    display: none;
+  }
+  h1 {
+    font-size: 3.5em;
+    text-align: center;
+    background-color: #1A1A1A;
+    margin: auto;
+    padding: 0.5em;
+  }
+  .logohead {
+    height: inherit;
+  }
+  .spike-bottom {
+    display: none;
+  }
+  button {
+    width: 60%;
+  }
+  input {
+    width: 60%;
+  }
+  body {
+    background-image: none;
+  }
+  .education,
+  .work,
+  .past-projects,
+  .personal-work {
+    margin-left: -2.5em;
+  }
+  .mainpage li {
+    padding: 0.5em;
+  }
+  .gallery {
+    margin-left: 1em;
+  }
+  .gallery img {
+    width: 100%;
+  }
+  .logo {
+    display: none;
+    width: 50px;
+    margin: 2.3em 1em 1em 2em;
+  }
+  #footer {
+    height: 100%;
+  }
+  .mainpage {
+    font-size: 1em;
+  }
+  form p {
+    font-size: 0.5em;
+  }
+  .end h6 {
+    background-image: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1879px) {
+  .spike-bottom {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
