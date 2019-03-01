@@ -33,9 +33,10 @@ function myFunction() {
 }
 
 setTimeout(function() {
-    document.getElementById("animation").classList.add('play');
     document.getElementById("animation2").classList.add('playit');
   }, 1000);
+
+
 
 
 

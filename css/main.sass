@@ -1,456 +1,511 @@
 @font-face
-    font-family: 'Geomanist'
-    src: url('../fonts/Geomanist-Regular-Webfont/geomanist-regular-webfont.ttf') format('truetype'),
-    url('../fonts/Geomanist-Regular-Webfont/geomanist-regular-webfont.woff') format('woff'),
-    url('../fonts/Geomanist-Regular-Webfont/geomanist-regular-webfont.woff2') format('woff2')
+  font-family: 'Geomanist'
+  src: url('../fonts/Geomanist-Regular-Webfont/geomanist-regular-webfont.ttf') format('truetype')
+  src: url('../fonts/Geomanist-Regular-Webfont/geomanist-regular-webfont.woff') format ('woff')
+  src: url('../fonts/Geomanist-Regular-Webfont/geomanist-regular-webfont.woff2') format('woff2')
 
 @import url('https://fonts.googleapis.com/css?family=Oswald')
 
- 
-$text-color: #FFF
-$background-light: #21242C
-$nav-background: #FF5252
-$nav-highlight: #C44747
-$flare-bars: #1A1A1A
+//colours
+$text-color: #fff
+$background-light: #21242c
+$nav-background: #ff5252
+$nav-highlight: #c44747
+$flare-bars: #1a1a1a
+$dark-background: #111
+$nav-hider: #7b2525
+$form-font: #fff
+$form-grey: #e1e5f0
 
-$phone: "(min-width: 310px) and (max-width: 767px)"
-$tablet: "(min-width:  768px) and (max-width: 1023px)"
-$laptop: "(min-width: 1024px) and (max-width: 1879px)"
+//preset widths for devices
+$phone: '(min-width: 310px) and (max-width: 767px)'
+$tablet: '(min-width:  768px) and (max-width: 1023px)'
+$laptop: '(min-width: 1024px) and (max-width: 1879px)'
+$large-desktop: '(min-width: 2560px) and (max-width: 3840px)'
 
+
+//mainpage styles
 html
-    scroll-behavior: smooth
+  scroll-behavior: smooth
 
 body
-    background-color: #111111
-    color: $text-color
-    font-family: 'Geomanist', sans-serif
-    font-size: 1em
-    background-image: url("../images/svgbackground.svg")
-    background-repeat: no-repeat
-    background-size: cover
-    
+  background-color: $dark-background
+  background-image: url('../images/svgbackground.svg')
+  background-repeat: no-repeat
+  background-size: cover
+  color: $text-color
+  font-family: 'Geomanist', sans-serif
+  font-size: 1em
 
 .main
-    display: flex
-    height: 100%
+  display: flex
+  height: 100%
 
 .navigation
-    order: 2
+  order: 2
 
 .content
-    display: flex
-    flex-direction: column
-    margin-left: 6em
-    width: 100%
-    font-size: 1em
+  display: flex
+  flex-direction: column
+  font-size: 1em
+  margin-left: 6em
+  width: 100%
 
 .title
-    display: flex
-    font-size: 1.5em
-
+  display: flex
+  font-size: 1.5em
 
 .mainpage
-    //background-color: $background-light
-    width: 90%
-    height: 95%
-    //padding: 1em
-    //margin: 1em
-    font-size: 1.5em
-    font-weight: 400
-    margin: 1em
+  font-size: 1.5em
+  font-weight: 400
+  height: 95%
+  margin: 1em
+  width: 90%
 
-.mainpage h2
-    padding: 0.5em
+  h2
+    padding: .5em
 
-.mainpage li
+  li
     list-style-type: none
-    padding: 0.1em
+    padding: .1em
 
-.mainpage li:hover
-    margin-left: 0.5em
-    cursor: pointer
-
-.education
-    margin-left: 0.5em
-
-.work
-    margin-left: 1em
-
-.past-projects
-    margin-left: 3em
-
-.personal-work
-    margin-left: 5em
-
-h1
-    margin: 0.5em 0em 1em 0em
-    font-family: 'Oswald', sans-serif
-    box-sizing: border-box
-    padding: 0.1em
-    line-height: 1em
-    font-size: 4em
-    
-.logo
-    width: 100px
-    height: 100%
-    margin: 2.3em 2em 1em 2em
-
-h2, h4
-    font-family: 'Oswald', sans-serif
-
-
+    &:hover
+      cursor: pointer
+      margin-left: .5em
 
 .container
-    display: flex
-    flex-direction: column
-    position: fixed
-    z-index: 1
-    right: 0
-    top: 5vh
-    max-width: 29vh
+  display: flex
+  flex-direction: column
+  max-width: 29vh
+  position: fixed
+  right: 0
+  top: 5vh
+  z-index: 1
 
-#hider
-    position: fixed
-    right: 16vh
-    top: 28%
-    width: 3%
-    z-index: 1
-    border: none
-    font-size: 5em
-    color: #7b2525
-
-.changed
-    color: #FF5252 !important
-    right: 0 !important
-
-
-
-
-
-#hider:hover
-    background-color: transparent
-
-.container li
+  li
     list-style: none
 
-.nav-right
-    position: fixed
-    width: inherit
-    height: 100%
-    max-height: 1200px
-    right: 0
-    top: 0
-    z-index: -1
-
-_:-ms-lang(x), .nav-right
-    width: initial
-
-.nav-right .a
-    fill:#ff5252 
-    
-.nav-right .b 
-    filter:url(#a)   
-
-.nav-right-back
-    position: fixed
-    width: inherit
-    height: 100%
-    max-height: 1200px
-    right: 0
-    top: 0
-    z-index: -2
-
-_:-ms-lang(x), .nav-right-back
-    width: initial
-
-
-_:-ms-lang(x), .nav-icons
-    height: 30% !important
-    padding: 3vh 1vh 1vh 0.5vh !important 
-
-_:-ms-lang(x), .container a
-    width: 90%
-
-_:-ms-lang(x), .remove-from-ie
-    display: none
-
-
-.farback
-    width: inherit
-    height: 100%
-    top: 0
-    right: 11vw
-    position: fixed
-    z-index: 1
-
-
-
-.forwardbolt
-    width: inherit
-    height: 100%
-    top: 0
-    left: 0
-    position: fixed 
-    z-index: -2
-
-.nav-right-back .a
-    fill: #c44747
-
-.nav-right-back .b
-    filter:url(#a)
-
-.nav-icons
-    width: 100%
-    height: 4vh
-    padding: 1vh 0vh 1vh 0.5vh
-    max-height: 60px
-    position: relative
-    right: -5%
-  
-.container a
+  a
     margin-bottom: -1%
 
+//articles
+.education
+  margin-left: .5em
+
+.work
+  margin-left: 1em
+
+.past-projects
+  margin-left: 3em
+
+.personal-work
+  margin-left: 5em
+
+//headdings + Logo
+h1
+  box-sizing: border-box
+  font-family: 'Oswald', sans-serif
+  font-size: 4em
+  line-height: 1em
+  margin: .5em 0 1em
+  padding: .1em
+
+.logo
+  height: 100%
+  margin: 2.3em 2em 1em
+  width: 100px
+
+h2,
+h4
+  font-family: 'Oswald', sans-serif
+
+.changed
+  color: $nav-background !important
+  right: 0 !important
+
+//Navigation
+#hider
+  border: 0
+  color: $nav-hider
+  font-size: 9vh
+  position: fixed
+  right: 16vh
+  top: 28%
+  width: 3%
+  z-index: 1
+
+  &:hover
+    background-color: transparent
+
+.nav-right
+  height: 100%
+  max-height: 1200px
+  position: fixed
+  right: 0
+  top: 0
+  width: inherit
+  z-index: -1
+
+  .a
+    fill: $nav-background
+
+  .b
+    filter: url('#a')
+
+.nav-right-back
+  height: 100%
+  max-height: 1200px
+  position: fixed
+  right: 0
+  top: 0
+  width: inherit
+  z-index: -2
+
+  .a
+    fill: $nav-highlight
+
+  .b
+    filter: url('#a')
+
+//Nav icons and page styling
+.farback
+  height: 100%
+  position: fixed
+  right: 11vw
+  top: 0
+  width: inherit
+  z-index: 1
+
+.nav-icons
+  height: 4vh
+  max-height: 60px
+  padding: 1vh 0 1vh .5vh
+  position: relative
+  right: -5%
+  width: 100%
+
 .spike-bottom
-    width: inherit
-    height: 100%
-    max-height: 172px
- 
+  height: 100%
+  max-height: 172px
+  width: inherit
+
 footer
-    background-color: $flare-bars
-    height: 100vh
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    font-size: 1.5em
+  background-color: $flare-bars
+  display: flex
+  flex-direction: column
+  font-size: 1.5em
+  height: 100vh
+  justify-content: space-between
 
-footer article, form
+  article
+    h2,
+    h6
+      text-align: center
 
+    p
+      text-align: center
 
+    button
+      align-self: center
+      margin: .1em
+
+  form
+    button
+      align-self: center
+
+//Input, labels, buttons
 form
-    align-self: center
-    display: flex
-    flex-direction: column
-    justify-content: center
-    text-align: center
-    padding: 2em
+  align-self: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 2em
+  text-align: center
 
 footer > form
-    background-color: #111111
-    width: 100%
-    box-sizing: border-box
-    overflow: hidden
+  background-color: $dark-background
+  box-sizing: border-box
+  overflow: hidden
+  width: 100%
 
-
-
-//Input and labels
 label
-    padding-bottom: 1em
-    margin: 0.2em
+  margin: .2em
+  padding-bottom: 1em
 
 input
-    background-color: transparent
-    box-sizing: border-box
-    border: none
-    padding: 0.2em
-    line-height: 1
-    transition: border-color 0.2s
-    border-bottom: 1px solid #FF5252
-    width: 20%
-    color: white
+  background-color: transparent
+  border: 0
+  border-bottom: 1px solid $nav-background
+  box-sizing: border-box
+  color: $form-font
+  line-height: 1
+  padding: .2em
+  transition: border-color .2s
+  width: 20%
 
-
-.end h6
-    line-height: 1.5em
-    font-size: 0.5em
-    background-image: url("../images/end.svg")
-    background-repeat: no-repeat
-    background-position: center
-    padding: 5px
-    height: 50%
-    margin: 0
-    
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus 
+  &:focus
     outline: none
 
-footer article p
-    text-align: center
+.end
+  h6
+    background-image: url('../images/end.svg')
+    background-position: center
+    background-repeat: no-repeat
+    font-size: .5em
+    height: 50%
+    line-height: 1.5em
+    margin: 0
+    padding: 5px
 
-footer article h2, h6
-    text-align: center
+select
+  &:focus
+    outline: none
 
-footer article button
-    align-self: center
-    margin: 0.1em
+textarea
+  &:focus
+    outline: none
 
-.resume
-    display: flex
-    flex-direction: column
-    justify-content: center
-    margin-top: 2vh
-
-
-
-footer form button
-    align-self: center
-
-//buttons    
 button
-    box-sizing: borderbox
-    background-color: transparent
-    color: white
-    padding: 1em
-    border: 1px solid #FF5252
-    width: 20%
+  background-color: transparent
+  border: 1px solid $nav-background
+  box-sizing: borderbox
+  color: $form-font
+  padding: 1em
+  width: 20%
 
-button:hover
-    background-color: #FF5252
+  &:hover
+    background-color: $nav-background
     cursor: pointer
 
-.active, a:hover
-    width: 100%
-    background-color: $nav-highlight
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%)
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%)
+  &:focus
+    outline: none
 
+.resume
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin-top: 2vh
 
+.active, .container a:hover
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%)
+  background-color: $nav-highlight
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%)
+  width: 100%
+
+//Microsoft Edge Fixes
+_:-ms-lang(x),
+.nav-right
+  width: initial
+
+_:-ms-lang(x),
+.nav-right-back
+  width: initial
+
+_:-ms-lang(x),
+.container
+  a
+    width: 90%
+
+_:-ms-lang(x),
+.remove-from-ie
+  display: none
+
+//Nav bar firefox fix
 @-moz-document url-prefix()
   .active, a:hover
-    width: 13.5vw
-    height: 100%
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%)
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%)
+    height: 100%
+    width: 13.5vw
 
+  ::placeholder
+    color: $form-grey
 
-    ::placeholder
-        color: #E1E5F0  
 
 //gallery
 .gallery
-    display: flex
-    flex-wrap: wrap
+  //display: flex
+  //flex-wrap: wrap
 
-.gallery img
+  img
     height: 100%
+    margin: .5em
+    transition: 2s
     width: 20%
-    margin: 0.5em
-    transition: all 2s
 
-.gallery img:hover
-    transform: scale(1.14)
+    &:hover
+      transform: scale(1.14)
 
-
-.shapeshifter
+.large-image
   width: 100%
-  height: 171px
+
+
+//Logo and Animation
+.shapeshifter
   background-repeat: no-repeat
-
-
- 
+  height: 171px
+  width: 100%
 
 .logohead
   animation-duration: 3000ms
-  animation-timing-function: steps(180)
   animation-fill-mode: forwards
-  width: 100%
-  height: 205px
+  animation-timing-function: steps(180)
   background-repeat: no-repeat
+  height: 205px
+  width: 100%
 
-.logohead.playit 
+.logohead.playit
   animation-name: playanimation
 
-_:-ms-lang(x), .logohead
-    background-image: url("../images/fill.svg") !important
-    animation-fill-mode: none
-    animation-duration: 0ms
-    animation-timing-function: steps(0)
-
+_:-ms-lang(x),
+.logohead
+  animation-duration: 0ms
+  animation-fill-mode: none
+  animation-timing-function: steps(0)
+  background-image: url('../images/fill.svg') !important
 
 @keyframes playanimation
-  0% 
-    background-position: 0px 0px
-  100% 
-    background-position: -389520px 0px
+  0%
+    background-position: 0 0
+
+  100%
+    background-position: -389520px 0
 
 
-
-
+//Responsive Styling 
 @media #{$tablet}
-    nav    
-        display: none
-    .spike-bottom
-        display: none
-    h1
-        text-align: center
-        margin: auto
-    .logohead
-        background-color: #1A1A1A
-    button
-        width: 40%
-    input
-        width: 40%
-    body
-        background-image: none
-    .education,
-    .work,
-    .past-projects,
-    .personal-work,
-        margin-left: -1em
-    .mainpage li
-        padding: 0.5em
-    .gallery
-        margin-left: 2em
+  nav
+    display: none
+
+  .spike-bottom
+    display: none
+
+  .title
+    background-color: $flare-bars
+
+  .logo
+    margin: 2.3em 1em 2em 2em
+
+  h1
+    margin: auto
+    text-align: center
+
+  .logohead
+    background-color: $flare-bars
+
+  button
+    width: 40%
+
+  input
+    width: 40%
+
+  body
+    background-image: none
+
+  @mixin margin-fix
+    margin-left: -1em
+
+
+  .education
+    @include margin-fix
+  .work
+    @include margin-fix
+  .past-projects
+    @include margin-fix
+  .personal-work
+    @include margin-fix
+
+  .mainpage
+    li
+      padding: .5em
+
+  .gallery
+    margin-left: 2em
+
+  #footer
+    height: 100%
+
+  .end
+    h6
+      background-image: none
+
 
 @media #{$phone}
-    nav    
-        display: none
-    h1
-        font-size: 3.5em
-        text-align: center
-        background-color: #1A1A1A
-        margin: auto
-        padding: 0.5em
-    .logohead
-        height: inherit
-    .spike-bottom
-        display: none
-    button
-        width: 60%
-    input
-        width: 60%
-    body
-        background-image: none
-    .education, 
-    .work,
-    .past-projects,
-    .personal-work,
-        margin-left: -2.5em
-    .mainpage li
-        padding: 0.5em
-    .gallery
-        margin-left: 1em
-    .gallery img
-        width: 100%
-    .logo
-        display: none
-        width: 50px
-        margin: 2.3em 1em 1em 2em
-    #footer
-        height: 100%
-    .mainpage
-        font-size: 1em
-    form p
-        font-size: 0.5em
-    .end h6
-        background-image: none
+  nav
+    display: none
+
+  .title
+    background-color: $flare-bars
+
+  h1
+    background-color: $flare-bars
+    font-size: 3.5em
+    margin: auto
+    padding: .5em
+    text-align: center
+
+  .logohead
+    height: inherit
+
+  .spike-bottom
+    display: none
+
+  button
+    width: 60%
+
+  input
+    width: 60%
+
+  body
+    background-image: none
+
+  @mixin margin-fix-mobile
+    margin-left: -2.5em
+
+
+  .education
+    @include margin-fix-mobile
+  .work
+    @include margin-fix-mobile
+  .past-projects
+    @include margin-fix-mobile
+  .personal-work
+    @include margin-fix-mobile
+
+  .gallery
+    margin-left: 1em
+
+    img
+      width: 100%
+
+  .logo
+    display: none
+    margin: 2.3em 1em 1em 2em
+    width: 50px
+
+  #footer
+    height: 100%
+
+  .mainpage
+    font-size: 1em
+
+    li
+      padding: .5em
+
+  form
+    p
+      font-size: .5em
+
+  .end
+    h6
+      background-image: none
 
 @media #{$laptop}
-    .spike-bottom
-        display: none
+  .spike-bottom
+    display: none
 
 
 
-
+@media #{$large-desktop}
+  #hider
+    right: 13.5vh

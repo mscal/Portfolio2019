@@ -8,17 +8,17 @@
         <meta name="theme-color" content="#FF5252"/>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/light-modal.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <div class="logohead" id="animation2" style="background-image: url(images/fillheader.svg)">
             <article class="title">
-                    <img src="images/logo1.svg" class="logo">
+                    <img src="images/logo1.svg" class="logo" alt="mikes-logo">
                     <h1>Michael Scalia</h1>
             </article>
         </div>
         <section class="main">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="forwardbolt animated slideInDown" width="407.341" height="2227.255" viewBox="0 0 407.341 2227.255"><defs><style>.a{fill:#111;}</style></defs><path class="a" d="M53.782,0h85.426L277.784,750.359,227.222,941.144l233.9,1286.111h0L135.709,941.144l53.147-190.785Z" transform="translate(-53.782)"/></svg> -->
             <header class="navigation">
                 <nav>
                     <div class="container">
@@ -66,26 +66,80 @@
                         <li>Rack City - Govhack</li>
                     </ul>
                 </article>
-                <article class="mainpage personal-work">
+                <article class="mainpage personal-work" id="modal-exit">
                     <h2>Personal Work</h2>
                     <div class="gallery">
-                        <img src="images/4kCamera2049.jpg"></img>
-                        <img src="images/4kfough.png"></img>
-                        <img src="images/4kgrass.png"></img>
-                        <img src="images/firstokrender.png"></img>
-                        <img src="images/gettingbetter.jpg"></img>
+                        <a href="#gallery-modal" class="noZensmooth"><img src="images/4kCamera2049.jpg" alt="Camera 2049"></a>
+                        <a href="#gallery-modal-2" class="noZensmooth"><img src="images/4kfough.png" alt="doughnut+coffee"></a>
+                        <a href="#gallery-modal-3" class="noZensmooth"><img src="images/4kgrass.png" alt="grass-01"></a>
+                        <a href="#gallery-modal-4" class="noZensmooth"><img src="images/firstokrender.png" alt="grass-grey"></a>
+                        <a href="#gallery-modal-5" class="noZensmooth"><img src="images/gettingbetter.jpg" alt="grass-sword"></a>
+                    </div>
+                    <div class="light-modal" id="gallery-modal" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+                        <div class="light-modal-content animated fadeIn">
+                            <img src="images/4kCamera2049.jpg" class="large-image" alt="Camera 2049">
+                            <a href="#modal-exit" class="light-modal-close-icon noZensmooth" aria-label="close">×</a>
+                            <div class="light-modal-caption">Render based on the camera module used in bladerunner 2049</div>
+                            <div class="light-modal-navigation">
+                                <a href="#gallery-modal-4" class="light-modal-navigation navigation-prev noZensmooth"></a>
+                                <a href="#gallery-modal-2" class="light-modal-navigation navigation-next noZensmooth"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light-modal" id="gallery-modal-2" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+                        <div class="light-modal-content animated flipInY">
+                            <img src="images/4kfough.png" class="large-image" alt="doughnut+coffee">
+                            <a href="#modal-exit" class="light-modal-close-icon noZensmooth" aria-label="close">×</a>
+                            <div class="light-modal-caption">Render Doughnut tutorial, with added coffee cup and water sim</div>
+                            <div class="light-modal-navigation">
+                                <a href="#gallery-modal" class="light-modal-navigation navigation-prev noZensmooth"></a>
+                                <a href="#gallery-modal-3" class="light-modal-navigation navigation-next noZensmooth"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light-modal" id="gallery-modal-3" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+                        <div class="light-modal-content animated rollIn">
+                            <img src="images/4kgrass.png" class="large-image" alt="grass-01">
+                            <a href="#modal-exit" class="light-modal-close-icon noZensmooth" aria-label="close">×</a>
+                            <div class="light-modal-caption">My first render for grass.</div>
+                            <div class="light-modal-navigation">
+                                <a href="#gallery-modal-2" class="light-modal-navigation navigation-prev noZensmooth"></a>
+                                <a href="#gallery-modal-4" class="light-modal-navigation navigation-next noZensmooth"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light-modal" id="gallery-modal-4" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+                        <div class="light-modal-content animated rollIn">
+                            <img src="images/firstokrender.png" alt="grass-grey">
+                            <a href="#modal-exit" class="light-modal-close-icon noZensmooth" aria-label="close">×</a>
+                            <div class="light-modal-caption">Taking the grass render and adding ciris sword from witcher</div>
+                            <div class="light-modal-navigation">
+                                <a href="#gallery-modal-3" class="light-modal-navigation navigation-prev noZensmooth"></a>
+                                <a href="#gallery-modal-5" class="light-modal-navigation navigation-next noZensmooth"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="light-modal" id="gallery-modal-5" role="dialog" aria-labelledby="light-modal-label" aria-hidden="false">
+                        <div class="light-modal-content animated rollIn">
+                            <img src="images/gettingbetter.jpg" class="large-image" alt="grass-sword">
+                            <a href="#modal-exit" class="light-modal-close-icon noZensmooth" aria-label="close">×</a>
+                            <div class="light-modal-caption">Taking the grass render and adding ciris sword from witcher</div>
+                            <div class="light-modal-navigation">
+                                <a href="#gallery-modal-4" class="light-modal-navigation navigation-prev noZensmooth"></a>
+                                <a href="#gallery-modal" class="light-modal-navigation navigation-next noZensmooth"></a>
+                            </div>
+                        </div>
                     </div>
                 </article>
             </section>
         </section>
         <div class="shapeshifter spike-bottom" id="animation" style="background-image: url(images/bottom_spike.svg)"></div>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="spike-bottom" width="1691.383" height="152.474" viewBox="0 0 1691.383 152.474"><defs><style>.a{fill:#111;}</style></defs><path class="a" d="M-51.079,2094.831,1640.3,2247.3H-51.079" transform="translate(51.079 -2094.831)"/></svg> -->
         <footer id="footer">
                 <article class="resume">
                     <form target="_blank">
                         <h2>Resume</h2>
                         <p>Check out my resume or contact me through the provided form below.</p>
-                        <button class="Button" type="submit" formaction="CV_2019-Sensitive.pdf" target="_blank" rel="noopener noreferrer">Resume</button>
+                        <button class="Button" type="submit" formaction="CV_2019-Restrictive.pdf" formtarget="_blank" rel="noopener noreferrer">Resume</button>
                     </form>
                 </article>
                 <form>
