@@ -32,7 +32,7 @@ body
   background-color: $dark-background
   background-image: url('../images/svgbackground.svg')
   background-repeat: no-repeat
-  background-size: cover
+  //background-size: cover
   color: $text-color
   font-family: 'Geomanist', sans-serif
   font-size: 1em
@@ -59,20 +59,22 @@ body
   font-size: 1.5em
   font-weight: 400
   height: 95%
-  margin: 1em
+  margin: .5em
   width: 90%
 
   h2
-    padding: .5em
+    padding: .1em
 
   li
     list-style-type: none
-    padding: .1em
 
     &:hover
       cursor: pointer
       margin-left: .5em
 
+      .arrow
+        opacity: 1
+        transform: translate(0)
 .container
   display: flex
   flex-direction: column
@@ -91,6 +93,26 @@ body
 //articles
 .education
   margin-left: .5em
+  max-height: 94%
+  transition: max-height 0.3s ease-in
+
+.hide-them-all
+  max-height: 0
+  transition: max-height 0.3s ease-out
+  opacity: 0
+  z-index: -500
+  overflow: hidden
+
+.activeSelection
+  color: $nav-highlight
+
+  .arrow
+    opacity: 1
+    transform: translate(0)
+
+    path
+      stroke: $nav-highlight
+
 
 .work
   margin-left: 1em
@@ -100,6 +122,22 @@ body
 
 .personal-work
   margin-left: 5em
+
+.arrow
+  width: 1.2rem
+  display: inline-block
+  padding-bottom: -5px
+  opacity: 0
+  transition: all .2s
+  transform: translateX(-100%)
+
+.arrow
+  path
+    stroke: $form-font
+    stroke-width: 1px
+    fill: none
+
+
 
 //headdings + Logo
 h1
@@ -292,6 +330,30 @@ button
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%)
   width: 100%
 
+.work-details
+  display: none
+  margin-left: 2em
+  width: 70%
+  opacity: 1
+  animation: fade-in 4s
+
+  ul
+    margin-left: 4em
+
+  li
+    &:hover
+      cursor: auto
+      margin-left: 0
+
+.work-details.show
+  display: block
+
+@keyframes fade-in
+  0%
+      opacity: 0
+  100%
+      opacity: 1
+
 //Microsoft Edge Fixes
 _:-ms-lang(x),
 .nav-right
@@ -326,6 +388,11 @@ _:-ms-lang(x),
 .gallery
   //display: flex
   //flex-wrap: wrap
+  margin-left: 1.5em
+
+  p
+    width: 60%
+    text-align: justify
 
   img
     height: 100%
@@ -336,7 +403,9 @@ _:-ms-lang(x),
     &:hover
       transform: scale(1.14)
 
+
 .large-image
+  margin-left: 1em
   width: 100%
 
 
@@ -422,6 +491,9 @@ _:-ms-lang(x),
   .gallery
     margin-left: 2em
 
+    p
+      width: 100%
+
   #footer
     height: 100%
 
@@ -474,6 +546,9 @@ _:-ms-lang(x),
 
   .gallery
     margin-left: 1em
+
+    p
+      width: 100%
 
     img
       width: 100%
