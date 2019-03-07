@@ -67,7 +67,7 @@ body
 
   li
     list-style-type: none
-    padding: .1em
+    padding: .4em
 
     &:hover
       cursor: pointer
@@ -91,6 +91,19 @@ body
 //articles
 .education
   margin-left: .5em
+  max-height: 94%
+  transition: max-height 0.3s ease-in
+
+.hide-them-all
+  max-height: 0
+  transition: max-height 0.3s ease-out
+  opacity: 0
+  z-index: -500
+  overflow: hidden
+
+.activeSelection
+  color: $nav-highlight
+
 
 .work
   margin-left: 1em
@@ -292,6 +305,30 @@ button
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%)
   width: 100%
 
+.work-details
+  display: none
+  margin-left: 2em
+  width: 70%
+  opacity: 1
+  animation: fade-in 4s
+
+  ul
+    margin-left: 4em
+
+  li
+    &:hover
+      cursor: auto
+      margin-left: 0
+
+.work-details.show
+  display: block
+
+@keyframes fade-in
+  0%
+      opacity: 0
+  100%
+      opacity: 1
+
 //Microsoft Edge Fixes
 _:-ms-lang(x),
 .nav-right
@@ -326,6 +363,11 @@ _:-ms-lang(x),
 .gallery
   //display: flex
   //flex-wrap: wrap
+  margin-left: 1.5em
+
+  p
+    width: 60%
+    text-align: justify
 
   img
     height: 100%
@@ -336,7 +378,9 @@ _:-ms-lang(x),
     &:hover
       transform: scale(1.14)
 
+
 .large-image
+  margin-left: 1em
   width: 100%
 
 
@@ -422,6 +466,9 @@ _:-ms-lang(x),
   .gallery
     margin-left: 2em
 
+    p
+      width: 100%
+
   #footer
     height: 100%
 
@@ -474,6 +521,9 @@ _:-ms-lang(x),
 
   .gallery
     margin-left: 1em
+
+    p
+      width: 100%
 
     img
       width: 100%
