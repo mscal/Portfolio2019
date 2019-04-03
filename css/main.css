@@ -50,6 +50,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.5em;
+  height: 205px;
 }
 
 .mainpage {
@@ -57,15 +58,30 @@ body {
   font-weight: 400;
   height: 95%;
   margin: .5em;
-  width: 90%;
+  width: 88%;
 }
 
 .mainpage h2 {
   padding: .1em;
 }
 
+.mainpage ul {
+  padding-left: 20px;
+}
+
 .mainpage li {
   list-style-type: none;
+  width: 45%;
+  margin: .2em;
+  padding: 10px;
+  -webkit-transform: skew(8deg);
+          transform: skew(8deg);
+  background-color: #111;
+}
+
+.mainpage li p {
+  -webkit-transform: skew(-8deg);
+          transform: skew(-8deg);
 }
 
 .mainpage li:hover {
@@ -102,6 +118,44 @@ body {
   margin-bottom: -1%;
 }
 
+.media-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 24em;
+  margin-top: 4.5em;
+  width: 10%;
+}
+
+.media-links a {
+  max-width: 100px;
+}
+
+.media-links a img {
+  height: 45%;
+  padding: 1em;
+}
+
+.modal-link {
+  color: #ff5252;
+  text-decoration: none;
+}
+
+.modal-link:hover {
+  opacity: .5;
+}
+
+.modal-link:hover .behance-img {
+  display: block;
+}
+
+.behance-img {
+  display: none;
+  position: absolute;
+  right: 20%;
+  top: 0;
+}
+
 .education {
   margin-left: .5em;
   max-height: 94%;
@@ -118,30 +172,40 @@ body {
   overflow: hidden;
 }
 
-.activeSelection {
+.active-selection {
   color: #c44747;
 }
 
-.activeSelection .arrow {
+.active-selection .arrow {
   opacity: 1;
   -webkit-transform: translate(0);
           transform: translate(0);
 }
 
-.activeSelection .arrow path {
+.active-selection .arrow path {
   stroke: #c44747;
 }
 
 .work {
-  margin-left: 1em;
+  margin-left: 1.6em;
 }
 
 .past-projects {
-  margin-left: 3em;
+  margin-left: 2.5em;
+  position: relative;
+}
+
+.past-projects h2 {
+  margin-left: 1.5em;
 }
 
 .personal-work {
-  margin-left: 5em;
+  margin-left: 8em;
+}
+
+.personal-work p {
+  margin-left: 1.5em;
+  width: 68%;
 }
 
 .arrow {
@@ -177,8 +241,7 @@ h1 {
   width: 100px;
 }
 
-h2,
-h4 {
+h2 {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -332,6 +395,18 @@ label {
   padding-bottom: 1em;
 }
 
+.text-area {
+  overflow: hidden;
+  background-color: transparent;
+  line-height: 1;
+  border: none;
+  border-bottom: 1px solid #ff5252;
+  width: 20%;
+  height: 50%;
+  resize: none;
+  color: #fff;
+}
+
 input {
   background-color: transparent;
   border: 0;
@@ -356,7 +431,7 @@ input:focus {
   background-repeat: no-repeat;
   font-size: .5em;
   height: 50%;
-  line-height: 1.5em;
+  line-height: 1em;
   margin: 0;
   padding: 5px;
 }
@@ -412,8 +487,8 @@ button:focus {
 
 .work-details {
   display: none;
-  margin-left: 2em;
-  width: 70%;
+  margin-left: 5em;
+  width: 60%;
   opacity: 1;
   -webkit-animation: fade-in 4s;
           animation: fade-in 4s;
@@ -476,6 +551,7 @@ _:-ms-lang(x),
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%);
     height: 100%;
     width: 13.5vw;
+    margin-left: 10px;
   }
   ::placeholder {
     color: #e1e5f0;
@@ -484,10 +560,12 @@ _:-ms-lang(x),
 
 .gallery {
   margin-left: 1.5em;
+  width: 90%;
 }
 
 .gallery p {
-  width: 60%;
+  width: 75%;
+  margin-left: 0;
   text-align: justify;
 }
 
@@ -505,7 +583,7 @@ _:-ms-lang(x),
 }
 
 .large-image {
-  margin-left: 1em;
+  margin-left: 1.5em;
   width: 100%;
 }
 
@@ -558,7 +636,7 @@ _:-ms-lang(x),
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1749px) {
   nav {
     display: none;
   }
@@ -572,11 +650,16 @@ _:-ms-lang(x),
     margin: 2.3em 1em 2em 2em;
   }
   h1 {
-    margin: auto;
     text-align: center;
+  }
+  h4 {
+    margin-left: 0;
   }
   .logohead {
     background-color: #1a1a1a;
+  }
+  .text-area {
+    width: 40%;
   }
   button {
     width: 40%;
@@ -586,6 +669,18 @@ _:-ms-lang(x),
   }
   body {
     background-image: none;
+  }
+  .media-links {
+    display: none;
+  }
+  .mainpage li {
+    width: 100%;
+    background-color: #1a1a1a;
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+  .work-details {
+    margin-left: 2em;
   }
   .education {
     margin-left: -1em;
@@ -599,11 +694,18 @@ _:-ms-lang(x),
   .personal-work {
     margin-left: -1em;
   }
+  .personal-work p {
+    width: 100%;
+  }
   .mainpage li {
     padding: .5em;
   }
+  .mainpage li p {
+    text-align: center;
+  }
   .gallery {
-    margin-left: 2em;
+    margin-left: 1.5em;
+    width: 100%;
   }
   .gallery p {
     width: 100%;
@@ -620,8 +722,10 @@ _:-ms-lang(x),
   nav {
     display: none;
   }
-  .title {
+  .logohead {
     background-color: #1a1a1a;
+    background-image: url("") !important;
+    height: inherit;
   }
   h1 {
     background-color: #1a1a1a;
@@ -629,12 +733,24 @@ _:-ms-lang(x),
     margin: auto;
     padding: .5em;
     text-align: center;
+    background-image: url("../images/logot.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
-  .logohead {
-    height: inherit;
+  .title {
+    height: 100%;
+  }
+  .arrow {
+    width: .8rem;
+  }
+  .work-details {
+    margin-left: 1em;
   }
   .spike-bottom {
     display: none;
+  }
+  .text-area {
+    width: 60%;
   }
   button {
     width: 60%;
@@ -644,6 +760,9 @@ _:-ms-lang(x),
   }
   body {
     background-image: none;
+  }
+  .media-links {
+    display: none;
   }
   .education {
     margin-left: -2.5em;
@@ -657,11 +776,16 @@ _:-ms-lang(x),
   .personal-work {
     margin-left: -2.5em;
   }
+  .personal-work p {
+    width: 90%;
+    margin-left: 2em;
+  }
   .gallery {
-    margin-left: 1em;
+    margin-left: 1.5em;
   }
   .gallery p {
     width: 100%;
+    margin-left: 0.5em;
   }
   .gallery img {
     width: 100%;
@@ -679,6 +803,13 @@ _:-ms-lang(x),
   }
   .mainpage li {
     padding: .5em;
+    width: 100%;
+    background-color: #1a1a1a;
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+  .mainpage li p {
+    text-align: center;
   }
   form p {
     font-size: .5em;
@@ -688,15 +819,42 @@ _:-ms-lang(x),
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1879px) {
+@media (min-width: 1750px) and (max-width: 1879px) {
   .spike-bottom {
     display: none;
+  }
+  .media-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 5em;
+    margin-top: 2.5em;
+    width: 10%;
+  }
+  .media-links img {
+    height: 50%;
+    padding: 1em;
+  }
+  .mainpage li p {
+    text-align: center;
   }
 }
 
 @media (min-width: 2560px) and (max-width: 3840px) {
   #hider {
-    right: 13.5vh;
+    right: 7%;
+  }
+  .resume {
+    margin-top: 10vh;
+  }
+  .media-links img {
+    height: 60%;
+  }
+}
+
+@media (max-height: 900px) {
+  #footer {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

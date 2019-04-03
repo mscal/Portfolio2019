@@ -19,9 +19,10 @@ $form-grey: #e1e5f0
 
 //preset widths for devices
 $phone: '(min-width: 310px) and (max-width: 767px)'
-$tablet: '(min-width:  768px) and (max-width: 1023px)'
-$laptop: '(min-width: 1024px) and (max-width: 1879px)'
+$tablet: '(min-width:  768px) and (max-width: 1749px)'
+$laptop: '(min-width: 1750px) and (max-width: 1879px)'
 $large-desktop: '(min-width: 2560px) and (max-width: 3840px)'
+$height-fix: '(max-height: 900px)'
 
 
 //mainpage styles
@@ -32,7 +33,7 @@ body
   background-color: $dark-background
   background-image: url('../images/svgbackground.svg')
   background-repeat: no-repeat
-  //background-size: cover
+  // background-size: cover
   color: $text-color
   font-family: 'Geomanist', sans-serif
   font-size: 1em
@@ -54,19 +55,31 @@ body
 .title
   display: flex
   font-size: 1.5em
+  height: 205px
 
 .mainpage
   font-size: 1.5em
   font-weight: 400
   height: 95%
   margin: .5em
-  width: 90%
+  width: 88%
 
   h2
     padding: .1em
 
+  ul
+    padding-left: 20px
+
   li
     list-style-type: none
+    width: 45%
+    margin: .2em
+    padding: 10px
+    transform: skew(8deg)
+    background-color: $dark-background
+
+    p
+      transform: skew(-8deg)
 
     &:hover
       cursor: pointer
@@ -75,6 +88,8 @@ body
       .arrow
         opacity: 1
         transform: translate(0)
+
+
 .container
   display: flex
   flex-direction: column
@@ -90,6 +105,37 @@ body
   a
     margin-bottom: -1%
 
+.media-links
+  display: flex
+  margin-left: 24em
+  margin-top: 4.5em
+  width: 10%
+
+  a
+    max-width: 100px
+
+    img
+      height: 45%
+      padding: 1em
+
+
+.modal-link
+  color: $nav-background
+  text-decoration: none
+
+.modal-link
+  &:hover
+    opacity: .5
+
+    .behance-img
+      display: block
+
+.behance-img
+  display: none
+  position: absolute
+  right: 20%
+  top: 0
+
 //articles
 .education
   margin-left: .5em
@@ -103,7 +149,7 @@ body
   z-index: -500
   overflow: hidden
 
-.activeSelection
+.active-selection
   color: $nav-highlight
 
   .arrow
@@ -115,13 +161,21 @@ body
 
 
 .work
-  margin-left: 1em
+  margin-left: 1.6em
 
 .past-projects
-  margin-left: 3em
+  margin-left: 2.5em
+  position: relative
+
+  h2
+    margin-left: 1.5em
 
 .personal-work
-  margin-left: 5em
+  margin-left: 8em
+
+  p
+    margin-left: 1.5em
+    width: 68%
 
 .arrow
   width: 1.2rem
@@ -153,8 +207,7 @@ h1
   margin: 2.3em 2em 1em
   width: 100px
 
-h2,
-h4
+h2
   font-family: 'Oswald', sans-serif
 
 .changed
@@ -270,6 +323,17 @@ label
   margin: .2em
   padding-bottom: 1em
 
+.text-area
+   overflow: hidden
+   background-color: transparent
+   line-height: 1
+   border: none
+   border-bottom: 1px solid $nav-background
+   width: 20%
+   height: 50%
+   resize: none
+   color: $form-font
+
 input
   background-color: transparent
   border: 0
@@ -291,7 +355,7 @@ input
     background-repeat: no-repeat
     font-size: .5em
     height: 50%
-    line-height: 1.5em
+    line-height: 1em
     margin: 0
     padding: 5px
 
@@ -332,8 +396,8 @@ button
 
 .work-details
   display: none
-  margin-left: 2em
-  width: 70%
+  margin-left: 5em
+  width: 60%
   opacity: 1
   animation: fade-in 4s
 
@@ -379,6 +443,7 @@ _:-ms-lang(x),
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%)
     height: 100%
     width: 13.5vw
+    margin-left: 10px
 
   ::placeholder
     color: $form-grey
@@ -389,9 +454,11 @@ _:-ms-lang(x),
   //display: flex
   //flex-wrap: wrap
   margin-left: 1.5em
+  width: 90%
 
   p
-    width: 60%
+    width: 75%
+    margin-left: 0
     text-align: justify
 
   img
@@ -405,7 +472,7 @@ _:-ms-lang(x),
 
 
 .large-image
-  margin-left: 1em
+  margin-left: 1.5em
   width: 100%
 
 
@@ -456,11 +523,15 @@ _:-ms-lang(x),
     margin: 2.3em 1em 2em 2em
 
   h1
-    margin: auto
     text-align: center
+  h4
+    margin-left: 0
 
   .logohead
     background-color: $flare-bars
+
+  .text-area
+    width: 40%
 
   button
     width: 40%
@@ -470,6 +541,18 @@ _:-ms-lang(x),
 
   body
     background-image: none
+
+  .media-links
+    display: none
+
+  .mainpage
+    li
+      width: 100%
+      background-color: #1a1a1a
+      transform: skew(0deg)
+
+  .work-details
+    margin-left: 2em
 
   @mixin margin-fix
     margin-left: -1em
@@ -483,13 +566,19 @@ _:-ms-lang(x),
     @include margin-fix
   .personal-work
     @include margin-fix
+    p
+      width: 100%
 
   .mainpage
     li
       padding: .5em
 
+      p
+        text-align: center
+
   .gallery
-    margin-left: 2em
+    margin-left: 1.5em
+    width: 100%
 
     p
       width: 100%
@@ -506,8 +595,10 @@ _:-ms-lang(x),
   nav
     display: none
 
-  .title
+  .logohead
     background-color: $flare-bars
+    background-image: url('') !important
+    height: inherit
 
   h1
     background-color: $flare-bars
@@ -515,12 +606,24 @@ _:-ms-lang(x),
     margin: auto
     padding: .5em
     text-align: center
+    background-image: url("../images/logot.svg")
+    background-repeat: no-repeat
+    background-position: center
 
-  .logohead
-    height: inherit
+  .title
+    height: 100%
+
+  .arrow
+    width: .8rem
+
+  .work-details
+    margin-left: 1em
 
   .spike-bottom
     display: none
+
+  .text-area
+    width: 60%
 
   button
     width: 60%
@@ -530,6 +633,9 @@ _:-ms-lang(x),
 
   body
     background-image: none
+
+  .media-links
+    display: none
 
   @mixin margin-fix-mobile
     margin-left: -2.5em
@@ -544,11 +650,17 @@ _:-ms-lang(x),
   .personal-work
     @include margin-fix-mobile
 
+    p
+      width: 90%
+      margin-left: 2em
+
+
   .gallery
-    margin-left: 1em
+    margin-left: 1.5em
 
     p
       width: 100%
+      margin-left: 0.5em
 
     img
       width: 100%
@@ -566,6 +678,12 @@ _:-ms-lang(x),
 
     li
       padding: .5em
+      width: 100%
+      background-color: #1a1a1a
+      transform: skew(0deg)
+
+      p
+        text-align: center
 
   form
     p
@@ -579,8 +697,38 @@ _:-ms-lang(x),
   .spike-bottom
     display: none
 
+  .media-links
+    display: flex
+    margin-left: 5em
+    margin-top: 2.5em
+    width: 10%
+
+    img
+      height: 50%
+      padding: 1em
+
+  .mainpage
+
+    li
+
+      p
+        text-align: center
+
 
 
 @media #{$large-desktop}
   #hider
-    right: 13.5vh
+    right: 7%
+
+  .resume
+    margin-top: 10vh
+
+  .media-links
+
+    img
+      height: 60%
+
+@media #{$height-fix}
+  #footer
+    height: 100%
+

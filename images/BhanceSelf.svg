@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="485" height="547" viewBox="0 0 485 547">
+  <g id="BhanceSelf" transform="translate(-128 -703)">
+    <g id="Path_10" data-name="Path 10" transform="translate(128 734)" fill="none">
+      <path d="M0,0H485V485H0Z" stroke="none"/>
+      <path d="M 30 30 L 30 455 L 455 455 L 455 30 L 30 30 M 0 0 L 485 0 L 485 485 L 0 485 L 0 0 Z" stroke="none" fill="#fff"/>
+    </g>
+    <text id="Be" transform="translate(167 1096)" fill="#fff" font-size="336" font-family="Sarala-Regular, Sarala"><tspan x="0" y="0">Be</tspan></text>
+    <path id="Path_11" data-name="Path 11" d="M0,0H95" transform="translate(426.5 895.5)" fill="none" stroke="#fff" stroke-width="13"/>
+  </g>
+</svg>
