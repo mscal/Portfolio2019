@@ -20,8 +20,9 @@ $form-grey: #e1e5f0
 //preset widths for devices
 $phone: '(min-width: 310px) and (max-width: 767px)'
 $tablet: '(min-width:  768px) and (max-width: 1749px)'
-$laptop: '(min-width: 1750px) and (max-width: 1879px)'
-$large-desktop: '(min-width: 2560px) and (max-width: 3840px)'
+$laptop: '(min-width: 1750px) and (max-width: 1987px)'
+$large-desktop: '(min-width: 1988px) and (max-width: 3840px)'
+$extra-desktop: '(min-width: 3841px) and max-width: 6000px'
 $height-fix: '(max-height: 900px)'
 
 
@@ -33,7 +34,7 @@ body
   background-color: $dark-background
   background-image: url('../images/svgbackground.svg')
   background-repeat: no-repeat
-  // background-size: cover
+  background-size: cover
   color: $text-color
   font-family: 'Geomanist', sans-serif
   font-size: 1em
@@ -57,6 +58,7 @@ body
   font-size: 1.5em
   height: 205px
 
+
 .mainpage
   font-size: 1.5em
   font-weight: 400
@@ -67,16 +69,26 @@ body
   h2
     padding: .1em
 
+  h4
+    color: $nav-background
+
   ul
     padding-left: 20px
 
+    a
+      color: $form-font
+      text-decoration: none
+
+      &:visited
+        color: $form-font
+
   li
+    background-color: $dark-background
     list-style-type: none
-    width: 45%
     margin: .2em
     padding: 10px
     transform: skew(8deg)
-    background-color: $dark-background
+    width: 45%
 
     p
       transform: skew(-8deg)
@@ -99,9 +111,6 @@ body
   top: 5vh
   z-index: 1
 
-  li
-    list-style: none
-
   a
     margin-bottom: -1%
 
@@ -118,50 +127,256 @@ body
       height: 45%
       padding: 1em
 
+    &:hover
+      opacity: .5
+
+.behance-vid
+  height: 76%
+  left: 5%
+  position: relative
+  top: 7%
+
+.behance-img
+  background-image: url('../images/xdmockup.svg')
+  background-repeat: no-repeat
+  display: none
+  height: 70%
+  left: 6.5%
+  position: absolute
+  top: 34%
+  width: 27%
+  z-index: 1
+
+.behance-hover
+  margin-left: 1.5em
+
+  &:hover + .behance-img
+    display: block
+
+.liquor-img
+  display: none
+  height: 60%
+  left: 55%
+  position: absolute
+  top: 47%
+
+.liquor-vid
+  height: 80%
+
+.liq-hover
+
+  &:hover + .liquor-img
+    display: block
+
+.ato-img
+  display: none
+  height: 60%
+  left: 55%
+  position: absolute
+  top: 30%
+
+.ato-vid
+  height: 80%
+
+.ato-hover
+
+  &:hover + .ato-img
+    display: block
+
+
+.free-img
+  display: none
+  height: 60%
+  left: 55%
+  position: absolute
+  top: 25%
+
+.free-vid
+  height: 80%
+
+.free-hover
+
+  &:hover + .free-img
+    display: block
+
+
+.tutor-img
+  display: none
+  height: 60%
+  left: 55%
+  position: absolute
+  top: 21%
+
+.tutor-vid
+  height: 80%
+
+.tutor-hover
+
+  &:hover + .tutor-img
+    display: block
+
+.bigcrew-vid
+  height: 59%
+  left: 3%
+  position: relative
+  top: 12%
+
+.bigcrew-img
+  background-image: url('../images/thebigcrewback.svg')
+  background-repeat: no-repeat
+  display: none
+  height: 70%
+  position: absolute
+  right: 13%
+  top: 21%
+  width: 30%
+
+.bigcrew-hover
+
+  &:hover + .bigcrew-img
+    display: block
+
+
+.peer-img
+  display: none
+  height: 45%
+  position: absolute
+  right: 8%
+  top: 25%
+
+.peer-hover
+
+  &:hover + .peer-img
+    display: block
+
+.sayhello-img
+  display: none
+  height: 60%
+  position: absolute
+  right: 13%
+  top: 30%
+
+.say-hover
+
+  &:hover + .sayhello-img
+    display: block
+
+.rack-img
+  display: none
+  height: 50%
+  position: absolute
+  right: 14%
+  top: 45%
+
+.rack-hover
+
+  &:hover + .rack-img
+    display: block
+
+.kenmore-img
+  display: none
+  height: 70%
+  position: absolute
+  right: 14%
+  top: 20%
+
+.kenmore-hover
+  display: none
+
+  &:hover + .kenmore-img
+    display: block
+
+
+.uq-img
+  display: none
+  height: 90%
+  position: absolute
+  right: 14%
+  top: 20%
+
+.uq-hover
+
+  &:hover + .uq-img
+    display: block
+
+.bottom-divider
+  background-image: url('../images/bottom_cutoff.svg')
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100px
 
 .modal-link
   color: $nav-background
   text-decoration: none
 
-.modal-link
-  &:hover
-    opacity: .5
+.gallery-dark
+  opacity: .5
 
-    .behance-img
-      display: block
-
-.behance-img
-  display: none
-  position: absolute
-  right: 20%
-  top: 0
+.settings-title
+  font-size: 2em
+  text-align: center
 
 //articles
 .education
   margin-left: .5em
   max-height: 94%
-  transition: max-height 0.3s ease-in
+  position: relative
+  transition: max-height .3s ease-in
 
 .hide-them-all
   max-height: 0
-  transition: max-height 0.3s ease-out
   opacity: 0
-  z-index: -500
   overflow: hidden
+  transition: max-height .3s ease-out
+  z-index: -500
+  position: absolute
+
+.remove-left
+  margin-left: 0%
+
+.article-image
+  width: 98% !important
+  height: auto
 
 .active-selection
-  color: $nav-highlight
+  background-color: $nav-highlight !important
+  color: $form-font
+
+  + .tutor-img
+      height: 100%
+
+  + .free-img
+      height: 100%
+
+  + .ato-img
+      height: 100%
+
+  + .liquor-img
+      height: 100%
+
+  + .peer-img
+      height: 100%
+
+  + .sayhello-img
+      height: 100%
+      left: 60%
+
+  + .rack-img
+      height: 100%
+      top: 10%
+
 
   .arrow
     opacity: 1
     transform: translate(0)
 
     path
-      stroke: $nav-highlight
+      stroke: $form-font
 
 
 .work
   margin-left: 1.6em
+  position: relative
 
 .past-projects
   margin-left: 2.5em
@@ -171,27 +386,28 @@ body
     margin-left: 1.5em
 
 .personal-work
-  margin-left: 8em
+  background-image: url('../images/personalworkback.svg')
+  background-size: cover
+  margin-left: 5.6em
+  padding-left: 4%
+  position: relative
 
   p
     margin-left: 1.5em
     width: 68%
 
 .arrow
-  width: 1.2rem
   display: inline-block
-  padding-bottom: -5px
   opacity: 0
-  transition: all .2s
+  padding-bottom: -5px
   transform: translateX(-100%)
+  transition: all .2s
+  width: 1.2rem
 
-.arrow
   path
+    fill: none
     stroke: $form-font
     stroke-width: 1px
-    fill: none
-
-
 
 //headdings + Logo
 h1
@@ -212,16 +428,16 @@ h2
 
 .changed
   color: $nav-background !important
-  right: 0 !important
+  margin-left: 60% !important
 
 //Navigation
 #hider
   border: 0
   color: $nav-hider
-  font-size: 9vh
-  position: fixed
-  right: 16vh
-  top: 28%
+  font-size: 5em
+  margin-left: .2rem
+  padding: 0%
+  top: 28vh
   width: 3%
   z-index: 1
 
@@ -259,13 +475,6 @@ h2
     filter: url('#a')
 
 //Nav icons and page styling
-.farback
-  height: 100%
-  position: fixed
-  right: 11vw
-  top: 0
-  width: inherit
-  z-index: 1
 
 .nav-icons
   height: 4vh
@@ -274,11 +483,6 @@ h2
   position: relative
   right: -5%
   width: 100%
-
-.spike-bottom
-  height: 100%
-  max-height: 172px
-  width: inherit
 
 footer
   background-color: $flare-bars
@@ -324,15 +528,15 @@ label
   padding-bottom: 1em
 
 .text-area
-   overflow: hidden
-   background-color: transparent
-   line-height: 1
-   border: none
-   border-bottom: 1px solid $nav-background
-   width: 20%
-   height: 50%
-   resize: none
-   color: $form-font
+  background-color: transparent
+  border: 0
+  border-bottom: 1px solid $nav-background
+  color: $form-font
+  height: 50%
+  line-height: 1
+  overflow: hidden
+  resize: none
+  width: 20%
 
 input
   background-color: transparent
@@ -394,12 +598,21 @@ button
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%)
   width: 100%
 
-.work-details
-  display: none
-  margin-left: 5em
-  width: 60%
-  opacity: 1
+.work-details,
+.uq-details,
+.free-details,
+.ato-details,
+.liquor-details,
+.peer-details,
+.hello-details,
+.rack-details
   animation: fade-in 4s
+  display: none
+  margin-left: 8em
+  opacity: 1
+  width: 70%
+
+
 
   ul
     margin-left: 4em
@@ -409,14 +622,24 @@ button
       cursor: auto
       margin-left: 0
 
-.work-details.show
-  display: block
+  &.show
+    display: block
+
+  img
+    width: 40%
+
+.rack-details,
+.hello-details,
+.peer-details
+  margin-left: 10em
 
 @keyframes fade-in
   0%
-      opacity: 0
+    opacity: 0
+
   100%
-      opacity: 1
+    opacity: 1
+
 
 //Microsoft Edge Fixes
 _:-ms-lang(x),
@@ -442,8 +665,8 @@ _:-ms-lang(x),
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%)
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%)
     height: 100%
-    width: 13.5vw
     margin-left: 10px
+    width: 13.5vw
 
   ::placeholder
     color: $form-grey
@@ -451,15 +674,14 @@ _:-ms-lang(x),
 
 //gallery
 .gallery
-  //display: flex
-  //flex-wrap: wrap
+
   margin-left: 1.5em
   width: 90%
 
   p
-    width: 75%
     margin-left: 0
     text-align: justify
+    width: 87%
 
   img
     height: 100%
@@ -477,10 +699,6 @@ _:-ms-lang(x),
 
 
 //Logo and Animation
-.shapeshifter
-  background-repeat: no-repeat
-  height: 171px
-  width: 100%
 
 .logohead
   animation-duration: 3000ms
@@ -518,12 +736,14 @@ _:-ms-lang(x),
 
   .title
     background-color: $flare-bars
+    justify-content: space-between
 
   .logo
     margin: 2.3em 1em 2em 2em
 
   h1
     text-align: center
+
   h4
     margin-left: 0
 
@@ -532,6 +752,12 @@ _:-ms-lang(x),
 
   .text-area
     width: 40%
+
+
+  .modal-link
+    button
+      width: 25%
+      margin-top: 5%
 
   button
     width: 40%
@@ -542,17 +768,77 @@ _:-ms-lang(x),
   body
     background-image: none
 
+  .remove-left
+    margin-left: 6em !important
+
   .media-links
-    display: none
+    flex-direction: column
+    margin-left: 0%
+    margin-top: .2em
+    width: auto
+
+    a
+      height: 30%
 
   .mainpage
     li
-      width: 100%
-      background-color: #1a1a1a
+      background-color: $flare-bars
+      padding: .5em
       transform: skew(0deg)
+      width: 100%
 
-  .work-details
+      p
+        text-align: center
+
+      &:hover + .peer-img
+        display: none
+
+      &:hover + .sayhello-img
+        display: none
+
+      &:hover + .rack-img
+        display: none
+
+      &:hover + .kenmore-img
+        display: none
+
+      &:hover + .uq-img
+        display: none
+
+      &:hover + .tutor-img
+        display: none
+
+      &:hover + .free-img
+        display: none
+
+      &:hover + .ato-img
+        display: none
+
+      &:hover + .liquor-img
+        display: none
+
+    a
+      &:hover + .bigcrew-img
+        display: none
+
+  .behance-img
+    left: 8%
+    top: 40%
+    width: 24rem
+
+  .behance-vid
+    height: 75%
+
+  .work-details,
+  .uq-details,
+  .free-details,
+  .ato-details,
+  .liquor-details,
+  .peer-details,
+  .hello-details,
+  .rack-details
     margin-left: 2em
+    width: 85%
 
   @mixin margin-fix
     margin-left: -1em
@@ -564,17 +850,19 @@ _:-ms-lang(x),
     @include margin-fix
   .past-projects
     @include margin-fix
+
+    h2
+      margin-left: 0%
+
   .personal-work
     @include margin-fix
+    padding-left: 0%
+
     p
       width: 100%
 
-  .mainpage
-    li
-      padding: .5em
-
-      p
-        text-align: center
+    button
+      margin-left: 2%
 
   .gallery
     margin-left: 1.5em
@@ -595,6 +883,10 @@ _:-ms-lang(x),
   nav
     display: none
 
+  .content
+    margin-left: 3em
+    width: 100%
+
   .logohead
     background-color: $flare-bars
     background-image: url('') !important
@@ -602,22 +894,24 @@ _:-ms-lang(x),
 
   h1
     background-color: $flare-bars
+    background-image: url('../images/logot.svg')
+    background-position: center
+    background-repeat: no-repeat
     font-size: 3.5em
     margin: auto
     padding: .5em
+    padding-top: .3em
     text-align: center
-    background-image: url("../images/logot.svg")
-    background-repeat: no-repeat
-    background-position: center
 
   .title
     height: 100%
 
+  .article-image
+    width: 90% !important
+    height: auto
+
   .arrow
     width: .8rem
-
-  .work-details
-    margin-left: 1em
 
   .spike-bottom
     display: none
@@ -634,6 +928,19 @@ _:-ms-lang(x),
   body
     background-image: none
 
+  .work-details,
+  .uq-details,
+  .free-details,
+  .ato-details,
+  .liquor-details,
+  .peer-details,
+  .hello-details,
+  .rack-details
+    margin-left: .1em
+
+    p
+      width: 90%
+
   .media-links
     display: none
 
@@ -647,20 +954,27 @@ _:-ms-lang(x),
     @include margin-fix-mobile
   .past-projects
     @include margin-fix-mobile
+
+    h2
+      margin-left: 0%
+
   .personal-work
     @include margin-fix-mobile
 
     p
-      width: 90%
-      margin-left: 2em
+      margin-left: 1em
+      width: 94%
 
+    button
+      margin-bottom: 2%
+      margin-left: 15%
 
   .gallery
-    margin-left: 1.5em
+    margin-left: .8em
 
     p
+      margin-left: .5em
       width: 100%
-      margin-left: 0.5em
 
     img
       width: 100%
@@ -675,12 +989,47 @@ _:-ms-lang(x),
 
   .mainpage
     font-size: 1em
+    width: 100%
+
+    a
+      &:hover + .bigcrew-img
+        display: none
+
+      &:hover + .behance-img
+        display: none
 
     li
+      background-color: $flare-bars
       padding: .5em
-      width: 100%
-      background-color: #1a1a1a
       transform: skew(0deg)
+      width: 100%
+
+      &:hover + .peer-img
+        display: none
+
+      &:hover + .sayhello-img
+        display: none
+
+      &:hover + .kenmore-img
+        display: none
+
+      &:hover + .uq-img
+        display: none
+
+      &:hover + .rack-img
+        display: none
+
+      &:hover + .tutor-img
+        display: none
+
+      &:hover + .free-img
+        display: none
+
+      &:hover + .ato-img
+        display: none
+
+      &:hover + .liquor-img
+        display: none
 
       p
         text-align: center
@@ -694,6 +1043,9 @@ _:-ms-lang(x),
       background-image: none
 
 @media #{$laptop}
+  #hider
+    margin-left: 1.5rem
+
   .spike-bottom
     display: none
 
@@ -717,8 +1069,6 @@ _:-ms-lang(x),
 
 
 @media #{$large-desktop}
-  #hider
-    right: 7%
 
   .resume
     margin-top: 10vh
@@ -728,7 +1078,46 @@ _:-ms-lang(x),
     img
       height: 60%
 
+  .tutor-img,
+  .free-img,
+  .ato-img,
+  .liquor-img
+    left: 52%
+
+  .bigcrew-vid
+    height: 78%
+    left: 3.5%
+    top: 16%
+
+  .peer-img
+    height: 50%
+    left: 57%
+
+  .sayhello-img
+    height: 70%
+    left: 57%
+
+  .rack-img
+    height: 60%
+    left: 57%
+    top: 35%
+
+  .behance-img
+    left: 6%
+    top: 27.5%
+
+  .behance-vid
+    height: 90%
+    top: 7%
+
+  .kenmore-img,
+  .uq-img
+    left: 55%
+
+  .personal-work
+    margin-left: 5.3em
+    padding-bottom: 1%
+
 @media #{$height-fix}
   #footer
     height: 100%
-

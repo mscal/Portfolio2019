@@ -143,6 +143,7 @@
   position: absolute;
   right: -50px;
   top: 50%;
+  color: #fff;
   border-bottom: 1px solid;
   border-left: 1px solid;
   -ms-transform: rotate(-135deg);

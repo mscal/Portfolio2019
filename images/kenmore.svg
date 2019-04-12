@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="689" height="304" viewBox="0 0 689 304">
+  <g id="Group_2" data-name="Group 2" transform="translate(0 -4)">
+    <path id="Path_2" data-name="Path 2" d="M0,0H689V272H0Z" transform="translate(0 36)" fill="#111"/>
+    <path id="Path_1" data-name="Path 1" d="M0,0H315l25.587,41H0Z" transform="translate(0 4)" fill="#111"/>
+    <text id="Studied_at_Kenmore" data-name="Studied at Kenmore" transform="translate(100 32)" fill="#fff" font-size="18" font-family="Geomanist"><tspan x="-78.057" y="0">Studied at Kenmore</tspan></text>
+    <g id="Group_1" data-name="Group 1" transform="translate(-124.206 -1387.4)">
+      <path id="Path_3" data-name="Path 3" d="M0,0H640.861V224H0Z" transform="translate(147.723 1447.5)" fill="#197c69"/>
+      <text id="Kenmore_High" data-name="Kenmore High" transform="translate(468.117 1587.468)" fill="#f2f2f2" font-size="72" font-family="Geomanist"><tspan x="-227.808" y="0">Kenmore High</tspan></text>
+    </g>
+  </g>
+</svg>
