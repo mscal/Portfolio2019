@@ -776,6 +776,11 @@ button:focus {
   margin-left: 10em;
 }
 
+.skills {
+  height: auto;
+  width: 80% !important;
+}
+
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -1001,7 +1006,7 @@ _:-ms-lang(x),
     width: 24rem;
   }
   .behance-vid {
-    height: 75%;
+    height: 65%;
   }
   .work-details,
   .uq-details,

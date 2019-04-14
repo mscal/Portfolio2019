@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1721" height="473" viewBox="0 0 1721 473">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.599" y1="0.179" x2="0.6" y2="0.181" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#859ffa"/>
+      <stop offset="1" stop-color="#e4bc5d"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_14" data-name="Group 14" transform="translate(-91 -195)">
+    <path id="Path_4" data-name="Path 4" d="M0,0H411.1L526.765,177.978,0,168Z" transform="translate(91 464)" fill="#5f53b3"/>
+    <rect id="Rectangle_18" data-name="Rectangle 18" width="1721" height="162" transform="translate(91 506)" fill="#5f53b3"/>
+    <path id="Path_3" data-name="Path 3" d="M0,0H411.1L526.765,177.978,0,168Z" transform="translate(91 195)" fill="#5f53b3"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" width="1505" height="165" transform="translate(91 238)" fill="#5f53b3"/>
+    <g id="Group_13" data-name="Group 13">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="124" height="124" transform="translate(110 260)" fill="#e4bc5d"/>
+      <text id="JS" transform="translate(143 349)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">JS</tspan></text>
+    </g>
+    <g id="Group_8" data-name="Group 8" transform="translate(8)">
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="124" height="124" transform="translate(993 260)" fill="#859ffa"/>
+      <text id="C_" data-name="C#" transform="translate(1012 347)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">C#</tspan></text>
+    </g>
+    <g id="Group_11" data-name="Group 11" transform="translate(-1)">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="180" height="124" transform="translate(434 260)" fill="#6db6ee"/>
+      <text id="CSS" transform="translate(467 349)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">CSS</tspan></text>
+    </g>
+    <g id="Group_2" data-name="Group 2" transform="translate(-3)">
+      <rect id="Rectangle_14" data-name="Rectangle 14" width="350" height="124" transform="translate(434 525)" fill="#6db6ee"/>
+      <text id="Photoshop" transform="translate(454 617)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">Photoshop</tspan></text>
+    </g>
+    <text id="Design_Tools" data-name="Design Tools" transform="translate(108 505)" fill="#bcbac6" font-size="28" font-family="Geomanist"><tspan x="0" y="0">Design Tools</tspan></text>
+    <text id="Programming" transform="translate(110 237)" fill="#bcbac6" font-size="28" font-family="Geomanist"><tspan x="0" y="0">Programming</tspan></text>
+    <g id="Group_12" data-name="Group 12" transform="translate(0)">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="180" height="124" transform="translate(243 260)" fill="#f3b17e"/>
+      <text id="HTML" transform="translate(250 347)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">HTML</tspan></text>
+    </g>
+    <g id="Group_1" data-name="Group 1">
+      <rect id="Rectangle_15" data-name="Rectangle 15" width="302" height="124" transform="translate(110 525)" fill="#f3b17e"/>
+      <text id="Illustrator" transform="translate(130 612)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">Illustrator</tspan></text>
+    </g>
+    <g id="Group_10" data-name="Group 10" transform="translate(8)">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="180" height="124" transform="translate(614 260)" fill="#f793b1"/>
+      <text id="Sass" transform="translate(643 347)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">Sass</tspan></text>
+    </g>
+    <g id="Group_3" data-name="Group 3" transform="translate(-8)">
+      <rect id="Rectangle_13" data-name="Rectangle 13" width="302" height="124" transform="translate(809 525)" fill="#f793b1"/>
+      <text id="InDesign" transform="translate(836 617)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">InDesign</tspan></text>
+    </g>
+    <g id="Group_4" data-name="Group 4" transform="translate(-4)">
+      <rect id="Rectangle_16" data-name="Rectangle 16" width="350" height="124" transform="translate(1126 525)" fill="#f6a3bd"/>
+      <text id="AdobeXd" transform="translate(1161 617)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">AdobeXd</tspan></text>
+    </g>
+    <g id="Group_7" data-name="Group 7" transform="translate(3)">
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="180" height="124" transform="translate(1132 260)" fill="#f59292"/>
+      <text id="Java" transform="translate(1161 347)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">Java</tspan></text>
+    </g>
+    <g id="Group_9" data-name="Group 9" transform="translate(10)">
+      <rect id="Rectangle_8" data-name="Rectangle 8" width="180" height="124" transform="translate(802 260)" fill="#d99ff9"/>
+      <text id="PHP" transform="translate(836 347)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">PHP</tspan></text>
+    </g>
+    <g id="Group_5" data-name="Group 5">
+      <path id="Path_1" data-name="Path 1" d="M0,0H302V124H0Z" transform="translate(1491 525)" fill="#d99ff9"/>
+      <text id="Premiere" transform="translate(1514.269 617)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">Premiere</tspan></text>
+    </g>
+    <g id="Group_6" data-name="Group 6" transform="translate(0)">
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="253" height="124" transform="translate(1324 260)" fill="url(#linear-gradient)"/>
+      <text id="Python" transform="translate(1358 347)" fill="#5f53b3" font-size="66" font-family="Geomanist"><tspan x="0" y="0">Python</tspan></text>
+    </g>
+  </g>
+</svg>
