@@ -820,12 +820,18 @@ _:-ms-lang(x),
 }
 
 @-moz-document url-prefix() {
-  .active, a:hover {
+  .active,
+  #home-slider,
+  #contact-slider,
+  #settings-slider {
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 2% 100%);
     height: 100%;
-    margin-left: 10px;
     width: 13.5vw;
+  }
+  #hider {
+    width: 20%;
+    margin-left: -.3rem !important;
   }
   ::placeholder {
     color: #e1e5f0;
@@ -1294,6 +1300,11 @@ _:-ms-lang(x),
   .personal-work {
     margin-left: 5.3em;
     padding-bottom: 1%;
+  }
+  @-moz-document url-prefix() {
+    #hider {
+      margin-left: 0.8rem !important;
+    }
   }
 }
 

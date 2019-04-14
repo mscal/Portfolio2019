@@ -178,7 +178,6 @@ function hiding_all_but_me(me, clicked, num){
     var rackinfo = document.getElementById("rack-expand");
     var peerinfo = document.getElementById("peer-expand");
     var content = document.getElementsByClassName("content");
-    console.log(content);
 
 
     if(me === education){
