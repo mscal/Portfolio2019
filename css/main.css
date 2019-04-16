@@ -839,9 +839,9 @@ _:-ms-lang(x),
 }
 
 /* Safari 10.1+ (alternate method) */
-@supports (-webkit-appearance: none) {
+@media not all and (min-resolution: 0.001dpcm) {
   .media-links {
-    width: 10px;
+    display: none;
   }
 }
 
