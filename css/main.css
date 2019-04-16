@@ -838,6 +838,13 @@ _:-ms-lang(x),
   }
 }
 
+/* Safari 10.1+ (alternate method) */
+@supports (-webkit-appearance: none) {
+  .media-links {
+    width: 10px;
+  }
+}
+
 .gallery {
   margin-left: 1.5em;
   width: 90%;
