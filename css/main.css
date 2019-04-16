@@ -1314,6 +1314,11 @@ _:-ms-lang(x),
       margin-left: 0.8rem !important;
     }
   }
+  @media not all and (min-resolution: 0.001dpcm) {
+    .media-links {
+      display: none;
+    }
+  }
 }
 
 @media (max-height: 900px) {
