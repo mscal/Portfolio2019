@@ -841,7 +841,8 @@ _:-ms-lang(x),
 /* Safari 10.1+ (alternate method) */
 @media not all and (min-resolution: 0.001dpcm) {
   .media-links {
-    display: none;
+    height: 100% !important;
+    width: 10% !important;
   }
 }
 
