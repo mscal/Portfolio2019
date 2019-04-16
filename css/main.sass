@@ -657,11 +657,21 @@ _:-ms-lang(x),
 _:-ms-lang(x),
 .container
   a
-    width: 90%
+    width: 100%
 
 _:-ms-lang(x),
 .remove-from-ie
   display: none
+
+_:-ms-lang(x),
+.container
+  right: -1% !important
+
+_:-ms-lang(x),
+.nav-icons
+  width: 20rem
+  right: 0%
+
 
 //Nav bar firefox fix
 @-moz-document url-prefix()
@@ -1085,7 +1095,6 @@ _:-ms-lang(x),
 
 
 @media #{$large-desktop}
-
   .resume
     margin-top: 10vh
 
@@ -1138,9 +1147,9 @@ _:-ms-lang(x),
     #hider
       margin-left: 0.8rem !important
 
-  @media not all and (min-resolution: .001dpcm)
-    .media-links
-      display: none
+@media not all and (min-resolution: .001dpcm)
+  .media-links
+    display: none
 
 @media #{$height-fix}
   #footer

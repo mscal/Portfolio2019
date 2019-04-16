@@ -811,12 +811,23 @@ _:-ms-lang(x),
 
 _:-ms-lang(x) a,
 .container a {
-  width: 90%;
+  width: 100%;
 }
 
 _:-ms-lang(x),
 .remove-from-ie {
   display: none;
+}
+
+_:-ms-lang(x),
+.container {
+  right: -1% !important;
+}
+
+_:-ms-lang(x),
+.nav-icons {
+  width: 20rem;
+  right: 0%;
 }
 
 @-moz-document url-prefix() {
@@ -1314,10 +1325,11 @@ _:-ms-lang(x),
       margin-left: 0.8rem !important;
     }
   }
-  @media not all and (min-resolution: 0.001dpcm) {
-    .media-links {
-      display: none;
-    }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  .media-links {
+    display: none;
   }
 }
 
