@@ -34,6 +34,9 @@ body
   background-color: $dark-background
   background-image: url('../images/svgbackground.svg')
   background-repeat: no-repeat
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
   background-size: cover
   color: $text-color
   font-family: 'Geomanist', sans-serif
@@ -673,6 +676,79 @@ _:-ms-lang(x),
   right: 0%
 
 
+// IE 10/11 Fixes
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)
+  .nav-right
+    width: 17%
+    right: -2%
+    top: -5%
+    max-height: 1800px
+
+    .b
+      filter: none
+
+  .nav-right-back
+    width: 17.6%
+    right: 0%
+    top: -10%
+
+    .b
+      filter: none
+
+  .arrow
+    display: none
+
+  .mainpage
+    height: inherit
+    font-size: 1.1em
+    margin: 0em
+
+  .personal-work
+    height: 10%
+    background-image: none
+    margin-left: 3em
+
+  .bottom-divider
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    width: 100%
+    height: 90px
+
+  .behance-img
+    display: none
+
+  .media-links
+    a
+      img
+        width: 50%
+
+  .logo
+    margin: .5em 2em 1em
+
+  .content
+    margin-left: 5em
+
+  .work-details,
+  .uq-details,
+  .peer-details,
+  .hello-details,
+  .rack-details,
+  .free-details,
+  .ato-details,
+  .liquor-details
+    height: 1200px
+    margin-left: 10em
+
+  .bigcrew-vid
+    width: 90%
+    height: 80%
+    top: 15%
+    left: 5%
+
+  .light-modal-content img
+    height: 20%
+
 //Nav bar firefox fix
 @-moz-document url-prefix()
   .active,
@@ -742,6 +818,9 @@ _:-ms-lang(x),
   animation-duration: 0ms
   animation-fill-mode: none
   animation-timing-function: steps(0)
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
   background-image: url('../images/fill.svg') !important
 
 @keyframes playanimation
@@ -903,6 +982,23 @@ _:-ms-lang(x),
   .end
     h6
       background-image: none
+
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)
+ 
+    .logo
+      margin: 0em 1em 2em 2em
+
+    .behance-img
+      top: 160%
+      height: auto
+      width: 70%
+
+
+    .behance-vid
+      top: 85%
+      height: auto
+      width: 60%
+      left: 20%
 
 
 @media #{$phone}
@@ -1092,6 +1188,22 @@ _:-ms-lang(x),
       p
         text-align: center
 
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)
+    .education
+      h2
+        margin-left: -1em
+
+    .behance-img
+      top: 120%
+      height: auto
+      width: 40%
+
+
+    .behance-vid
+      top: 85%
+      height: auto
+      width: 60%
+      left: 20%
 
 
 @media #{$large-desktop}
@@ -1146,6 +1258,44 @@ _:-ms-lang(x),
   @-moz-document url-prefix()
     #hider
       margin-left: 0.8rem !important
+
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)
+    .education
+      h2
+        margin-left: -1em
+
+    .bottom-divider
+      display: none
+
+    .logohead
+      background-image: none !important
+
+    .behance-img
+      top: 90%
+      height: auto
+      width: 40%
+
+    .behance-vid
+      height: auto
+      width: 50%
+      left: 25%
+
+    .bigcrew-vid
+      width: 70%
+      left: 15%
+
+    .work-details,
+    .uq-details,
+    .peer-details,
+    .hello-details,
+    .rack-details,
+    .free-details,
+    .ato-details,
+    .liquor-details
+      height: 1700px
+
+    .content
+      margin-left: 6em
 
 @media not all and (min-resolution: .001dpcm)
   .media-links
