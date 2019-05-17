@@ -447,12 +447,12 @@ body {
   width: 68%;
 }
 
-.personal-work a {
+.personal-work p a {
   color: #c44747;
   text-decoration: none;
 }
 
-.personal-work a:hover {
+.personal-work p a:hover {
   color: #ff5252;
 }
 
