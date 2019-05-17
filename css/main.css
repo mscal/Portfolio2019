@@ -447,6 +447,15 @@ body {
   width: 68%;
 }
 
+.personal-work a {
+  color: #c44747;
+  text-decoration: none;
+}
+
+.personal-work a:hover {
+  color: #ff5252;
+}
+
 .arrow {
   display: inline-block;
   opacity: 0;
