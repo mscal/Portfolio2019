@@ -272,7 +272,7 @@ body {
 }
 
 .peer-hover:hover + .peer-img {
-  display: block;
+  /* display: block; */
 }
 
 .sayhello-img {
@@ -284,7 +284,7 @@ body {
 }
 
 .say-hover:hover + .sayhello-img {
-  display: block;
+  /* display: block; */
 }
 
 .rack-img {
@@ -296,7 +296,7 @@ body {
 }
 
 .rack-hover:hover + .rack-img {
-  display: block;
+  /* display: block; */
 }
 
 .kenmore-img {
@@ -873,6 +873,7 @@ _:-ms-lang(x),
     margin-left: 3em;
   }
   .bottom-divider {
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -991,6 +992,7 @@ _:-ms-lang(x),
   animation-duration: 0ms;
   animation-fill-mode: none;
   animation-timing-function: steps(0);
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

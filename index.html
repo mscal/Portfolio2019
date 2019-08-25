@@ -550,14 +550,14 @@
             <h2>Contact Me</h2>
             <label class="Label" for="email">
                 <input class="Input" type="text" name="email" placeholder="Email" data-validate-field="email"
-                    id="email">
+                    id="email" required>
             </label>
             <label class="Label" for="name">
-                <input class="Input" type="text" name="name" data-validate-field="name" placeholder="Name" id="name">
+                <input class="Input" type="text" name="name" data-validate-field="name" placeholder="Name" id="name" required>
             </label>
             <label class="Label" for="message">
                 <textarea class="text-area" maxlength="100" type="text" data-validate-field="text" name="message"
-                    placeholder="Message" id="message"></textarea>
+                    placeholder="Message" id="message" required></textarea>
             </label>
             <button class="Button" type="submit" value="Send">Send</button>
         </form>
@@ -567,7 +567,8 @@
     </footer>
 
     <script src="js/anime.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/main.js"
     <script src="js/zenscroll-min.js"></script>
     <script src="js/just-validate.min.js"></script>
 
