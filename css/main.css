@@ -169,28 +169,12 @@ body {
   z-index: 1;
 }
 
-.behance-hover {
-  margin-left: 1.5em;
-}
-
-.behance-hover:hover + .behance-img {
-  display: block;
-}
-
 .liquor-img {
   display: none;
   height: 60%;
   left: 55%;
   position: absolute;
   top: 47%;
-}
-
-.liquor-vid {
-  height: 80%;
-}
-
-.liq-hover:hover + .liquor-img {
-  display: block;
 }
 
 .ato-img {
@@ -205,10 +189,6 @@ body {
   height: 80%;
 }
 
-.ato-hover:hover + .ato-img {
-  display: block;
-}
-
 .free-img {
   display: none;
   height: 60%;
@@ -221,10 +201,6 @@ body {
   height: 80%;
 }
 
-.free-hover:hover + .free-img {
-  display: block;
-}
-
 .tutor-img {
   display: none;
   height: 60%;
@@ -235,10 +211,6 @@ body {
 
 .tutor-vid {
   height: 80%;
-}
-
-.tutor-hover:hover + .tutor-img {
-  display: block;
 }
 
 .bigcrew-vid {
@@ -259,20 +231,12 @@ body {
   width: 30%;
 }
 
-.bigcrew-hover:hover + .bigcrew-img {
-  display: block;
-}
-
 .peer-img {
   display: none;
   height: 45%;
   position: absolute;
   right: 8%;
   top: 25%;
-}
-
-.peer-hover:hover + .peer-img {
-  /* display: block; */
 }
 
 .sayhello-img {
@@ -283,20 +247,12 @@ body {
   top: 30%;
 }
 
-.say-hover:hover + .sayhello-img {
-  /* display: block; */
-}
-
 .rack-img {
   display: none;
   height: 50%;
   position: absolute;
   right: 14%;
   top: 45%;
-}
-
-.rack-hover:hover + .rack-img {
-  /* display: block; */
 }
 
 .kenmore-img {
@@ -307,24 +263,12 @@ body {
   top: 20%;
 }
 
-.kenmore-hover {
-  display: none;
-}
-
-.kenmore-hover:hover + .kenmore-img {
-  display: block;
-}
-
 .uq-img {
   display: none;
   height: 90%;
   position: absolute;
   right: 14%;
   top: 20%;
-}
-
-.uq-hover:hover + .uq-img {
-  display: block;
 }
 
 .bottom-divider {
@@ -873,7 +817,6 @@ _:-ms-lang(x),
     margin-left: 3em;
   }
   .bottom-divider {
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -992,7 +935,6 @@ _:-ms-lang(x),
   animation-duration: 0ms;
   animation-fill-mode: none;
   animation-timing-function: steps(0);
-  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
