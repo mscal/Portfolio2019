@@ -263,6 +263,10 @@ body {
   top: 20%;
 }
 
+.kenmore-hover {
+  display: none;
+}
+
 .uq-img {
   display: none;
   height: 90%;
